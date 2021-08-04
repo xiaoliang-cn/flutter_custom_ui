@@ -1,7 +1,8 @@
 name: flutter_custom_ui
-description: A new Flutter package project.
+description: A new Flutter CustomUI project.
 version: 0.0.1
-homepage:
+repository: https://github.com/xiaoliang-cn/flutter_custom_ui.git
+homepage: https://github.com/xiaoliang-cn/flutter_custom_ui.git
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
