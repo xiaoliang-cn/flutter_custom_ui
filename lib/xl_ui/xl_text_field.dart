@@ -4,6 +4,8 @@ class C1TextField extends StatefulWidget {
   final TextEditingController controller;
   final String? hintText;
   final TextInputType? textInputType;
+
+  //if true ,the maxLines = 1
   final bool isPassword;
   final VoidCallback? onTap;
   final double height;
@@ -66,7 +68,7 @@ class _C1TextFieldState extends State<C1TextField> {
                 : widget.textInputType!,
             obscureText: _showPassword,
             maxLines: widget.maxLines,
-            maxLength: widget.maxLength,
+            maxLength: widget.isPassword ? 1 : widget.maxLength,
             decoration: InputDecoration(
                 counterText: '',
                 contentPadding: EdgeInsets.only(left: 10),
